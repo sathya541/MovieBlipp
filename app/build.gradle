@@ -1,10 +1,20 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
+    id 'androidx.navigation.safeargs.kotlin'
+    id 'kotlin-android-extensions'
 }
 
 android {
+
     compileSdk 31
+
+    buildFeatures {
+        dataBinding true
+        viewBinding true
+    }
 
     defaultConfig {
         applicationId "sathya.com.movieblipp"
@@ -12,16 +22,28 @@ android {
         targetSdk 31
         versionCode 1
         versionName "1.0"
-
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-    }
 
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments += ["room.schemaLocation": "$projectDir/schemas".toString()]
+            }
+        }
+    }
+//
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+//
+    applicationVariants.all { variant ->
+        buildConfigField("String", "BASE_URL", "\"https://api.themoviedb.org/3/\"")
+        buildConfigField("String", "ORIGINAL_IMAGE_URL", "\"https://image.tmdb.org/t/p/original\"")
+        buildConfigField("String", "API_KEY", "\"b19cf405bb450f0c5122b15e190b79cc\"")
+    }
+//
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -29,14 +51,75 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    buildFeatures{
+        viewBinding true
+        dataBinding = true
+    }
+
 }
 
 dependencies {
 
+    // Common
+    implementation('org.jetbrains.kotlin:kotlin-stdlib:1.5.31')
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.3.1'
     implementation 'com.google.android.material:material:1.4.0'
-    testImplementation 'junit:junit:4.+'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.5'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.3.5'
+    implementation "androidx.paging:paging-runtime-ktx:3.1.0-rc01"
+    implementation('androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0')
+    implementation('androidx.lifecycle:lifecycle-livedata-ktx:2.4.0')
+    implementation('org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2')
+    implementation('org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2')
+
+    //Room
+    implementation('androidx.room:room-runtime:2.3.0')
+    implementation('androidx.room:room-ktx:2.3.0')
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    kapt('androidx.room:room-compiler:2.3.0')
+
+    //Retrofit
+    implementation('com.squareup.retrofit2:retrofit:2.9.0')
+    implementation('com.squareup.retrofit2:converter-moshi:2.9.0')
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation("com.squareup.okhttp3:logging-interceptor:4.9.2")
+
+    //Hilt + Dagger
+    implementation 'com.google.dagger:hilt-android:2.40'
+    implementation  'androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03'
+    kapt 'com.google.dagger:hilt-android-compiler:2.38.1'
+    kapt 'androidx.hilt:hilt-compiler:1.0.0'
+
+    //Coil-kt
+    implementation('io.coil-kt:coil:1.0.0')
+    
+    //Circle Image View
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    //Lottie Animations
+    implementation 'com.airbnb.android:lottie:4.2.1'
+
+    //Material Design
+    implementation('com.google.android.material:material:1.4.0')
+
+    //ViewPager2
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'
+
+    //Skeleton View
+    implementation 'com.faltenreich:skeletonlayout:4.0.0'
+
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+
+    //Dimensions
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    implementation 'com.intuit.ssp:ssp-android:1.0.6'
+
+    //Test
+    testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 }

@@ -1,5 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../../layout/custom_preview.xml" value="0.1828125" />
+        <entry key="app/src/main/res/drawable/card_gradient_bg.xml" value="0.3260416666666667" />
+        <entry key="app/src/main/res/drawable/card_gradient_black.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/card_gradient_white.xml" value="0.184375" />
+        <entry key="app/src/main/res/drawable/default_pager_dot.xml" value="0.18385416666666668" />
+        <entry key="app/src/main/res/drawable/header_gradient_bg.xml" value="0.184375" />
+        <entry key="app/src/main/res/drawable/ic_back_button.xml" value="0.3260416666666667" />
+        <entry key="app/src/main/res/drawable/ic_baseline_access_time_24.xml" value="0.3260416666666667" />
+        <entry key="app/src/main/res/drawable/ic_baseline_calendar_today_24.xml" value="0.184375" />
+        <entry key="app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.3260416666666667" />
+        <entry key="app/src/main/res/drawable/ic_baseline_star_24.xml" value="0.3260416666666667" />
+        <entry key="app/src/main/res/drawable/ic_baseline_thumb_up_24.xml" value="0.25416666666666665" />
+        <entry key="app/src/main/res/drawable/ic_bookmark.xml" value="0.25416666666666665" />
+        <entry key="app/src/main/res/drawable/ic_bookmark_1.xml" value="0.184375" />
+        <entry key="app/src/main/res/drawable/ic_bookmark_done.xml" value="0.25416666666666665" />
+        <entry key="app/src/main/res/drawable/ic_cinewatch.xml" value="0.25416666666666665" />
+        <entry key="app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_movie_blue.xml" value="0.25416666666666665" />
+        <entry key="app/src/main/res/drawable/ic_movie_blue_wide.xml" value="0.3260416666666667" />
+        <entry key="app/src/main/res/drawable/ic_movie_green.xml" value="0.3260416666666667" />
+        <entry key="app/src/main/res/drawable/ic_movie_green_wide.xml" value="0.3260416666666667" />
+        <entry key="app/src/main/res/drawable/ic_movie_red.xml" value="0.25416666666666665" />
+        <entry key="app/src/main/res/drawable/ic_movie_red_wide.xml" value="0.3260416666666667" />
+        <entry key="app/src/main/res/drawable/ic_movie_yellow.xml" value="0.25416666666666665" />
+        <entry key="app/src/main/res/drawable/ic_movie_yellow_wide.xml" value="0.25416666666666665" />
+        <entry key="app/src/main/res/drawable/ic_person_blue.xml" value="0.25416666666666665" />
+        <entry key="app/src/main/res/drawable/ic_person_green.xml" value="0.25416666666666665" />
+        <entry key="app/src/main/res/drawable/ic_person_red.xml" value="0.25416666666666665" />
+        <entry key="app/src/main/res/drawable/ic_person_yellow.xml" value="0.25416666666666665" />
+        <entry key="app/src/main/res/drawable/ic_round_arrow_back_ios_24.xml" value="0.3260416666666667" />
+        <entry key="app/src/main/res/drawable/search_bg.xml" value="0.25416666666666665" />
+        <entry key="app/src/main/res/drawable/selected_pager_dot.xml" value="0.18385416666666668" />
+        <entry key="app/src/main/res/drawable/tab_pager_selector.xml" value="0.18385416666666668" />
+        <entry key="app/src/main/res/layout/activity_core.xml" value="0.18478260869565216" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.18478260869565216" />
+        <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_actor_details.xml" value="0.18478260869565216" />
+        <entry key="app/src/main/res/layout/fragment_artist_details.xml" value="0.16822916666666668" />
+        <entry key="app/src/main/res/layout/fragment_bookmark.xml" value="0.18478260869565216" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_home_view_pager.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/fragment_movie_details.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_search.xml" value="0.18478260869565216" />
+        <entry key="app/src/main/res/layout/fragment_view_all.xml" value="0.18478260869565216" />
+        <entry key="app/src/main/res/layout/item_cast.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/item_movie_home.xml" value="0.45" />
+        <entry key="app/src/main/res/layout/item_search.xml" value="0.18478260869565216" />
+        <entry key="app/src/main/res/layout/item_similar_movie.xml" value="0.18478260869565216" />
+        <entry key="app/src/main/res/layout/item_view_pager_card.xml" value="0.18478260869565216" />
+        <entry key="app/src/main/res/layout/video_dialog.xml" value="0.18478260869565216" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.25416666666666665" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.25416666666666665" />
+        <entry key="app/src/main/res/xml/raw.xml" value="0.17980072463768115" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="viewpager_height">@dimen/_160sdp</dimen>
+    <dimen name="viewpager_next_item_visible">@dimen/_28sdp</dimen>
+    <dimen name="viewpager_current_item_horizontal_margin">@dimen/_42sdp</dimen>
+</resources>
